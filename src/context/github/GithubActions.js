@@ -9,8 +9,6 @@ const github = axios.create({
   headers: { Authorization: `Bearer ${GITHUB_TOKEN}` },
 });
 
-console.log(GITHUB_TOKEN);
-
 // get search results
 export const searchUsers = async (text) => {
   const params = new URLSearchParams({
